@@ -17,8 +17,8 @@ jobs:
     steps:
       - name: Change Directory
         run: |
-          ls -l
-          cd ../POC-solid-map/poc-solid-map
+          ls
+          cd POC-solid-map
           ls
       - uses: actions/checkout@v3
       
