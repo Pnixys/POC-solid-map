@@ -17,11 +17,13 @@ jobs:
     steps:
       - name: Change Directory
         run: |
-          ls
+          ls -a
           cd ..
-          ls
+          ls -a
           cd POC-solid-map
-          ls
+          ls -a
+          cd poc-solid-map
+          ls -a
       - uses: actions/checkout@v3
       
       - name: Set up Node.js
