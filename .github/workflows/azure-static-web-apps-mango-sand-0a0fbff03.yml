@@ -26,7 +26,10 @@ jobs:
           node-version: 18
       
       - name: Install Dependencies
-        run: npm install
+        run: |
+          ls 
+          cd poc-solid-map
+          npm install
 
       - name: Build with vit
         run: vite build
