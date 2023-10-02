@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Change Directory
-        run: cd ./poc-solid-map
+        run: ls
       - uses: actions/checkout@v3
       
       - name: Set up Node.js
