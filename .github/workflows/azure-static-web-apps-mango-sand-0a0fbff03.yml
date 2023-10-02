@@ -11,14 +11,18 @@ on:
 jobs:
   build_and_deploy_job:
     runs-on: ubuntu-latest
+
+    
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
+      - name: Change Directory
+        run: cd ./poc-solid-map
+      - uses: actions/checkout@v3
       
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 14
+          node-version: 18
       
       - name: Install Dependencies
         run: npm install
