@@ -15,6 +15,7 @@ jobs:
     
     name: Build and Deploy Job
     steps:
+      - uses: actions/checkout@v3
       - name: Change Directory
         run: |
           ls -a
@@ -24,8 +25,6 @@ jobs:
           ls -a
           cd poc-solid-map
           ls -a
-      - uses: actions/checkout@v3
-      
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
