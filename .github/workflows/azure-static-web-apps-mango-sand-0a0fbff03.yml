@@ -19,6 +19,8 @@ jobs:
         run: |
           echo "Hello, this is a Linux command"
           ls -l
+          cd ./poc_solid_map/
+          ls
       - uses: actions/checkout@v3
       
       - name: Set up Node.js
