@@ -25,15 +25,11 @@ jobs:
         with:
           node-version: 18
       
-      - name: Install Dependencies
+      - name: Install Dependencies and  build 
         run: |
           ls 
           cd poc-solid-map
           npm install
-
-      - name: Build with vitz
-        run: |
-          cd poc-solid-map
           vite build
       
       - name: Deploy to Azure Static Web Apps
