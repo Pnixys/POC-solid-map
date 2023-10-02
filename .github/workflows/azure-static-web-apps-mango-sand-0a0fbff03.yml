@@ -16,7 +16,9 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Change Directory
-        run: ls
+        run: |
+          echo "Hello, this is a Linux command"
+          ls -l
       - uses: actions/checkout@v3
       
       - name: Set up Node.js
