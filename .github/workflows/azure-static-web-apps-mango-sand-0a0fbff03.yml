@@ -18,6 +18,8 @@ jobs:
       - name: Change Directory
         run: |
           ls
+          cd ..
+          ls
           cd POC-solid-map
           ls
       - uses: actions/checkout@v3
