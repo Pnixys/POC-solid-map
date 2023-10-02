@@ -30,6 +30,7 @@ jobs:
           ls 
           cd poc-solid-map
           npm install
+          npm install vite@latest
           vite build
       
       - name: Deploy to Azure Static Web Apps
