@@ -17,9 +17,8 @@ jobs:
     steps:
       - name: Change Directory
         run: |
-          echo "Hello, this is a Linux command"
           ls -l
-          cd ..
+          cd ../POC-solid_map:poc-solid-map
           ls
       - uses: actions/checkout@v3
       
@@ -31,8 +30,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build
+      - name: Build with vit
+        run: vite build
       
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
